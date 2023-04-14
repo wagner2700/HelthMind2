@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HelthMind2.props" />
+</Project>
