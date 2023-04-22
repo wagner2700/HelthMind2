@@ -8,6 +8,7 @@ namespace HelthMind2.Context
         
         // Propriedade responsável pelo acesso Medico
         public DbSet<MedicoModel> medico { get; set; }
+        public DbSet<PacienteModel> paciente { get; set; }
 
         // Propriedade responsável pelo acesso Paciente
         //public DbSet<PacienteModel> paciente { get; set; }
