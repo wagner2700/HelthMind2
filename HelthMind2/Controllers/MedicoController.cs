@@ -39,7 +39,7 @@ namespace HelthMind2.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
-            }
+        }
 
         [HttpPost]
         public ActionResult<MedicoModel> Post([FromBody] MedicoModel medicoModel)
@@ -56,9 +56,9 @@ namespace HelthMind2.Controllers
                 var location = new Uri(Request.GetEncodedUrl() + "/" + medicoModel.MedicoId);
                 return Created(location, medicoModel);
             }
-                catch(Exception error)
+            catch (Exception error)
             {
-                return BadRequest(new { message = $"Não foi possivel{error.Message}" });
+                return BadRequest(new { message = $"Não foi possivel cadastrar{error.Message}" });
             }
         }
 
@@ -69,13 +69,60 @@ namespace HelthMind2.Controllers
             try
             {
                 var medicoModel = medicoRepository.ConsultarPorId(id);
+                if (medicoModel != null)
+                {
+                    return Ok(medicoModel);
+                }
+                else
+                {
+                    return NotFound();
+                }
 
-                return Ok(medicoModel);
 
-            }catch (KeyNotFoundException ex) 
+            } catch (KeyNotFoundException ex)
             {
                 throw ex;
             }
         }
+
+        public ActionResult<MedicoModel> Put([FromRoute] int id, [FromBody] MedicoModel medicoModel)
+        {
+            if (medicoModel.MedicoId != id)
+            {
+                return NotFound();
+            }
+            try
+            {
+                medicoRepository.Inserir(medicoModel);
+                return NoContent();
+            } catch (Exception error)
+            {
+                return BadRequest(new { message = $"Não foi possível alterar {error}" });
+            }
+        }
+
+        [HttpDelete]
+        public ActionResult<MedicoModel> Delete([FromRoute] int id)
+        {
+            try
+            {
+                var medicoModel = medicoRepository.ConsultarPorId(id);
+
+                if (medicoModel != null)
+                {
+                    medicoRepository.Excluir(medicoModel);
+                    return NoContent();
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            catch (Exception e)
+            {
+                return BadRequest();
+            }
+        }
     }
 }
+

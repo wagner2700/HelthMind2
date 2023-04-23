@@ -34,9 +34,10 @@ namespace HelthMind2.Repository
             dataBaseContext.SaveChanges();
         }
 
-        public void Excluir(int id)
+        public void Excluir(MedicoModel medicoModel)
         {
-        var medico = new MedicoModel( id ,"","","","");
+            dataBaseContext.medico.Remove(medicoModel);
+            dataBaseContext.SaveChanges();
         }
     }
 }

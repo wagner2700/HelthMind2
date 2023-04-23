@@ -1814,11 +1814,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wagne\\Desktop\\HelthTech\\HelthMind2\\HelthMind2\\HelthMind2.csproj",
+      "projectUniqueName": "C:\\Users\\wagne\\Source\\Repos\\HelthMind2\\HelthMind2\\HelthMind2.csproj",
       "projectName": "HelthMind2",
-      "projectPath": "C:\\Users\\wagne\\Desktop\\HelthTech\\HelthMind2\\HelthMind2\\HelthMind2.csproj",
+      "projectPath": "C:\\Users\\wagne\\Source\\Repos\\HelthMind2\\HelthMind2\\HelthMind2.csproj",
       "packagesPath": "C:\\Users\\wagne\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wagne\\Desktop\\HelthTech\\HelthMind2\\HelthMind2\\obj\\",
+      "outputPath": "C:\\Users\\wagne\\Source\\Repos\\HelthMind2\\HelthMind2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wagne\\AppData\\Roaming\\NuGet\\NuGet.Config",

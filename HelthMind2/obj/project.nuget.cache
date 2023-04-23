@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "22kzGT6XWYT/fkiFRVZocFN/o2hxze1Va+KwoQTl5U/lbNdcBLlLg81Z4zEAax+aYiS+XKVT35rTcu50EY2UXg==",
+  "dgSpecHash": "glLvlGmmHMVj0SsP5WE3CnGnTqWJGacP1jTmU24tIayVosJK6hayXQIQHmokTQ00i1tvijowiUDO9Zdm5CfpAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wagne\\Desktop\\HelthTech\\HelthMind2\\HelthMind2\\HelthMind2.csproj",
+  "projectFilePath": "C:\\Users\\wagne\\Source\\Repos\\HelthMind2\\HelthMind2\\HelthMind2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wagne\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
